@@ -3,7 +3,7 @@ import 'rxjs/add/operator/map';
 import { Injectable, ApplicationRef } from '@angular/core';
 import { Location } from '@angular/common';
 import { Router, NavigationEnd, NavigationCancel, DefaultUrlSerializer } from '@angular/router';
-import { NgRedux } from '@angular-redux/core';
+import { NgRedux } from '@angular-redux/store';
 import { Observable } from 'rxjs/Observable';
 import { ISubscription } from 'rxjs/Subscription'
 import { UPDATE_LOCATION } from './actions';

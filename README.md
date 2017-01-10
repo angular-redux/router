@@ -34,7 +34,7 @@ This package uses the new v3 router for angular 2 `@angular/router@^3.4.2`.
   @NgModule({
     imports: [
       RouterModule.forRoot(routes),
-      NgReduxModule.forRoot(),
+      NgReduxModule,
       NgReduxRouterModule
       // ...your imports
     ],
