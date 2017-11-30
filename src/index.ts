@@ -4,16 +4,14 @@ import { NgReduxRouter } from './router';
 import { RouterAction, routerReducer } from './reducer';
 import { UPDATE_LOCATION } from './actions';
 
-@NgModule({
-  providers: [NgReduxRouter]
-})
+@NgModule()
 export class NgReduxRouterModule {
-  /* static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders {
     return {
       ngModule: NgReduxRouterModule,
       providers: [NgReduxRouter]
     };
-  } */
+  }
 }
 
 export { NgReduxRouter, RouterAction, routerReducer, UPDATE_LOCATION };

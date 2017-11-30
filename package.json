@@ -2,16 +2,17 @@
   "name": "@angular-redux/router",
   "version": "7.0.0-0",
   "description": "Keep your Angular 2+ router state in Redux.",
-  "main": "./lib/es5/index.js",
-  "module": "./lib/esm/index.js",
-  "typings": "./lib/es5/index.d.ts",
+  "main": "./lib/es5/src/index.js",
+  "module": "./lib/esm/src/index.js",
+  "typings": "./lib/es5/src/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/angular-redux/router.git"
   },
   "scripts": {
     "prepublish": "npm run build",
-    "build": "rimraf ./lib && npm run build:es5 && npm run build:esm && npm run build:es6",
+    "build":
+      "rimraf ./lib && npm run build:es5 && npm run build:esm && npm run build:es6",
     "postbuild": "rimraf \"src/**/*.ngfactory.ts\"",
     "build:es6": "ngc -p tsconfig.es6.json && npm run postbuild",
     "build:esm": "ngc -p tsconfig.esm.json  && npm run postbuild",
