@@ -8,7 +8,7 @@
 
 * NgReduxRouterModule now needs to be imported with `.forRoot`
 
-** before **
+**before**
 
 ```ts
 @NgModule({
@@ -23,7 +23,7 @@
 export class AppModule {}
 ```
 
-** after **
+**after**
 
 ```ts
 @NgModule({
